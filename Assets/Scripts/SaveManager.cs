@@ -43,6 +43,8 @@ public class SaveManager : MonoBehaviour
     }
     public void Save(int saveFile = 1)
     {
+        List<BrickData> a = brickPlacer.SaveBricks();
+
         SaveData data = new SaveData();
         data.bricks = brickPlacer.SaveBricks();
         data.points = MatchManager.instance.GetPoints();

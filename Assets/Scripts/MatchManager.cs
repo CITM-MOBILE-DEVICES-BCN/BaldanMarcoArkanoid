@@ -45,7 +45,6 @@ public class MatchManager : MonoBehaviour
 
         points = 0;
         SceneManager.LoadScene(1);
-        wonMatches = 0;
     }
 
     public void Win()
